@@ -12,3 +12,14 @@ console.log(nPosition)
 
 zPosition = text.indexOf("z")
 console.log(zPosition) // -1 not found
+console.log(text.charCodeAt(0)) //78? 65+13=78 ASCII
+
+console.log(String.fromCharCode(66)) //? B
+
+console.log("L".charCodeAt(0))
+console.log("E".charCodeAt(0))
+console.log("E".charCodeAt(0))
+
+console.log("l".charCodeAt(0))
+console.log("e".charCodeAt(0))
+console.log("e".charCodeAt(0))
