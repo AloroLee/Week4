@@ -26,3 +26,13 @@ console.log(corpus.length)
 // }
 
 // console.log(corpus.length)
+
+words = corpus.split(" ") // counting not including space because it's words not characcters and 1 less (3 would be 2)
+console.log(words[0])
+console.log(words[3])
+console.log(words[words.lenght - 1 ]) // to get the last unknown word 
+
+ip = "127.0.0.1"
+parts = ip.split(".")
+console.log(parts[0])
+console.log(parts[3])
