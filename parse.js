@@ -3,7 +3,7 @@
 
 // body of text is a corpus
 
-corpus = "Now is the time..."
+corpus = "Now is the time..." // array/list of character
 
 // console.log(corpus[0])
 // console.log(corpus[1])
@@ -19,3 +19,10 @@ for(i=0; i < corpus.length; i++){
 }
 
 console.log(corpus.length)
+
+// to show position 
+// for(i=0; i < corpus.length; i++){
+//     console.log(i, corpus[i], corpus[i].charCodeAt(0))
+// }
+
+// console.log(corpus.length)
