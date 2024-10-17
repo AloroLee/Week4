@@ -4,4 +4,9 @@ body{
     
 #toppings{
     background-color: gray;
+    margin-top: 1%;
+
+}
+#toppings legend{
+    background-color: white;
 }
