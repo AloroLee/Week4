@@ -21,18 +21,18 @@ function getReceipt(days, wantsToll, wantsGPS, wantsRoadSide, isUnderAge) {
 
     const grandTotal = (carRental + optionsSubtotal + surchargeAmount).toFixed(2);
     return `
-        Car rental: ${carRental}
-           Options: ${optionsSubtotal}
-Under 25 surcharge: ${surchargeAmount}
+        Car rental: ${carRental.toFixed(2)}
+           Options: ${optionsSubtotal.toFixed(2)}
+Under 25 surcharge: ${surchargeAmount.toFixed(2)}
 
          Total Due: ${grandTotal}
     `;
 }
 document.addEventListener("DOMContentLoaded", () => {
     const pickupDate = document.getElementById("pickupDate");
-    const numberOfDays = document.getElementById("numberOfDays");
+    const numberofDays = document.getElementById("numberofDays");
 
-    const toll = document.getElementById("toll");
+    const tollTag = document.getElementById("tollTag");
     const gps = document.getElementById("gps");
     const roadside = document.getElementById("roadside");
 
@@ -45,9 +45,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
     estimateButton.addEventListener("click", () => {
         receiptOutput.innerText = getReceipt(
-            pickupDate.value,
-            numberOfDays.value,
-            toll.checked,
+            numberofDays.value,
+            tollTag.checked,
             gps.checked,
             roadside.checked,
             isUnder.checked
