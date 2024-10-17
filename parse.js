@@ -1,6 +1,10 @@
 
 // PARSE - cutting things into pieces, parcel
-
+// substring(start, end) //No support for negative
+// substr(start, length) // uses length which is weird 
+// slice (start, end) // all purpose but only makes one cut 
+// split(" ") if you can use split its even better multuple cuts w no numbers
+ 
 // body of text is a corpus
 
 corpus = "Now is the time..." // array/list of character
